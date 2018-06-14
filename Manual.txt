@@ -1,0 +1,20 @@
+
+########### Install scikit-learn on Ubuntu 14.04 LTS #############
+
+
+
+<--------------- uninstall pip package --------------->
+pip uninstall 'name_of_package'
+
+<--------------- install scikit-image ubuntu 14.04 LTS --------------->
+
+sudo pip install scikit-image
+
+NOTE: if cython version <= 0.23 error, remove cython and re-install by using command:
+	sudo apt-get remove cython
+	sudo pip install cython
+	sudo apt-get install cython
+	  if get error: Found existing installation: six 1.5.2, using following command:
+	sudo -H pip install --ignore-installed six
+	
+	
