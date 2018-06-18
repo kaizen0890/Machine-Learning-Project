@@ -16,20 +16,12 @@ Xbar = np.concatenate((one, X), axis = 1)
 
 
 # Calculating weights of the fitting line
-A = np.dot(X.T, X)
-B = np.dot(X.T, Y)
+A = np.dot(Xbar.T, Xbar)
+B = np.dot(Xbar.T, Y)
 W = np.dot(np.linalg.pinv(A), B)
 
+w_0, w_1 = W[0], W[1]
 
-predict = 167.0*W
-print predict
-
-
-t = np.array([49, 50, 51, 54, 58, 59, 60, 62, 63, 64, 66, 67, 68])
-s = np.array([147, 150, 153, 158, 163, 165, 168, 170, 173, 175, 178, 180, 183])
-plt.scatter(t, s)
-plt.show()
-"""
 active = True
 while active:
 	name = raw_input("What's your name? ")
@@ -43,4 +35,6 @@ while active:
 	answer = raw_input("Would you want to try one more time? (yes/no)")
 	if answer == 'no':
 		active = False
-"""
+
+plt.scatter(X, Y)
+plt.show()
