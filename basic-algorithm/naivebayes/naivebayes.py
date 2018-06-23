@@ -47,6 +47,13 @@ models_1.fit(trainDataMultinomial, labelsMultinomial)
 #training using Bernoulli
 models_2.fit(trainDataBernoulli, labelsBernoulli)  
 
+
+
+print Mul_testData
+print Mul_testData.shape
+print type(Mul_testData)
+
+"""
 print 'Predict input data using MultinomialNB:'
 for i in range(Mul_testData.shape[0]):
 	print 'Predict for input data:' + str(Mul_testData[i])
@@ -60,3 +67,5 @@ for i in range(Ber_testData.shape[0]):
 	print 'Output label is: ' + models_1.predict(Ber_testData[i])[0]
 	print 'Predict probability of two classes are: ' + str(models_1.predict_proba(Ber_testData[i]))
 	print '\n'
+
+"""
