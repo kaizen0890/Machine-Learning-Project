@@ -50,7 +50,7 @@ with tf.Session() as session:
 		avg_set.append(avg_cost)
 		epoch_set.append(epoch+1)
 
-	plt.plot(epoch_set,avg_set, 'o',label='Logistic Regression Training phase')
+	plt.plot(epoch_set,avg_set, 'o',label='Softmax Regression training phase')
 	plt.ylabel('cost')
 	plt.xlabel('epoch')
 	plt.legend()
