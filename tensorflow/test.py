@@ -61,6 +61,4 @@ with tf.Session() as sess:
 #plt.imshow(result)
 #plt.show()
 	
-	
-
 
